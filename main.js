@@ -3,10 +3,10 @@ function search() {
 
     var name = document.getElementById('in').value;
 
-    var url = 'http://www.omdbapi.com/?apikey=' + KEY + '&s=' + name + '&r=xml';
+    var url = 'https://www.omdbapi.com/?apikey=' + KEY + '&s=' + name + '&r=xml';
     //+ '&type=movie'
 
-    $.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent(url) + '&callback=?', function(data) {
+    $.getJSON('https://whateverorigin.herokuapp.com/get?url=' + encodeURIComponent(url) + '&callback=?', function(data) {
         init(data.contents);
     });
 }
